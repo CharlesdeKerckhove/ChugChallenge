@@ -106,7 +106,7 @@ var myQuestions = [
 'Never have I ever had a finger in my ass',
 'Never have I ever had a threesome',
 'Never have I ever slept with a married person',
-'Never have I ever written out a list of the people Ive slept with',
+'Never have I ever written out a list of the people I have slept with',
 'Never have I ever had to lie about my "number" to avoid judgment',
 'Never have I ever fingered a woman (or been fingered) during a movie',
 'Never have I ever fingered a woman (or been fingered) in the back of a taxi',
@@ -180,7 +180,7 @@ function getmyQuestions(count){
     var tmpArrayE = myQuestions.slice(myQuestions);
     var goE = [];
 
-    if (myQuestions.length > 60) {
+    if (myQuestions.length > 0) {
     var optionsE = Math.floor(Math.random() * myQuestions.length);
     var removedE = myQuestions.splice(optionsE,1);
 
