@@ -16,7 +16,7 @@ var myArray = [
 'Empty glasses - Once a drink has been finished tap the glass on your shoulder',
 'No phones',
 'Say I love you after every sentence'
-];
+]; 
 
 var intro = "Complete the challenge or take a shot."
 

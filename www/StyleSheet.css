@@ -4,6 +4,7 @@ h1{
     color: #000000;
     font-size: 2em;
     font-family: Arial, Comic-Sans, Times-New-Roman;
+    margin-top: 5%;
 }
 h2{
     float: center;
@@ -19,12 +20,20 @@ h3{
     font-size: 1.6em;
     font-family: Arial, Comic-Sans, Times-New-Roman;
 }
+#SelectGame{
+    float: center;
+    text-align: center;
+    color: #000000;
+    font-size: 1.8em;
+    margin: none;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+}
 body{
 	max-height:100%;
 	max-width: 100%;
     font-size: 1.1em;
     font-family: Arial, Comic-Sans, Times-New-Roman;
-    background-color: #fef3f8;
+    background-color: #fff;
 	text-align: center;
 }
 .Border{
@@ -37,8 +46,13 @@ body{
 	padding-top: 1.5%;
 }
 .BorderC{
-    height:200px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%, -45%);
+    height:250px;
 	max-height:100%;
+    width: 98%;
     border: 2px solid transparent;
     border-bottom-color: #f785b6;
     border-top-color: #f785b6;
@@ -82,9 +96,9 @@ body{
 	transform:translateX(-50%);
 }
 .Button2{
-    background-color: #fef3f8;
+    background-color: #fff;
     height:auto;
-    width:40%;
+    width:100%;
     color: #f785b6;
     font-size: 125%;
     font-family: Arial, Comic-Sans, Times-New-Roman;
@@ -93,10 +107,30 @@ body{
    	border-radius: 2%;
    	text-decoration: none;
 }
-.Button3{
-    background-color: #fef3f8;
+.Button3Left{
+    background-color: #fff;
     height:auto;
     width:40%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin: 5%;
+    color: #f785b6;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:2%;
+   	border-color: #f785b6;
+   	border-radius: 2%;
+   	text-decoration: none;
+}
+.Button3Right{
+    background-color: #fff;
+    height:auto;
+    width:40%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 5%;
     color: #f785b6;
     font-size: 125%;
     font-family: Arial, Comic-Sans, Times-New-Roman;
@@ -106,7 +140,7 @@ body{
    	text-decoration: none;
 }
 .Button4{
-    background-color: #fef3f8;
+    background-color: #fff;
     height:auto;
     width:50%;
     color: #f785b6;
@@ -118,7 +152,7 @@ body{
    	text-decoration: none;
 }
 .Button5{
-    background-color: #fef3f8;
+    background-color: #fff;
     height:auto;
     width:100%;
     color: #f785b6;
@@ -129,8 +163,23 @@ body{
    	border-radius: 2%;
    	text-decoration: none;
 }
+.Button6{
+    background-color: #fff;
+    height:auto;
+    width:100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: #f785b6;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:2%;
+   	border-color: #f785b6;
+   	border-radius: 2%;
+   	text-decoration: none;
+}
 .ButtonHome{
-    background-color: #fef3f8;
+    background-color: #fff;
     height:auto;
     width:40%;
     text-align: center;
@@ -144,8 +193,54 @@ body{
    	text-decoration: none;
 }
 a{
-    background-color: #fef3f8;
+    background-color: #fff;
     text-decoration: none;
     color: #f785b6;
 }
 
+#heads{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden
+}
+#tails{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden
+}
+.QuestionInputs{
+    width: 80%;
+    height: 1.3em;
+    font-size: 1.3em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    float: left;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+.uploadQuestion{
+    width: 10%;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    background-color: #fff;
+    color: #f785b6;
+}
+#uploadStatus{
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+    transform: translateX(-45%);
+    width: 100%;
+}

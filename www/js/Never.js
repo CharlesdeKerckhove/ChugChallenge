@@ -1,4 +1,15 @@
-var myQuestions = [
+var docRef = firebase.database();
+
+var NeverQuestionRef = docRef.ref("/Game Type/Never Have I Ever/Questions");
+var allQuestions = [];
+
+NeverQuestionRef.once('value', function(data){
+    data.forEach(function(item){
+        allQuestions.push(item.val());
+     });
+});
+
+/*var myQuestions = [
 'Never have I ever called in sick to work because I was hungover',
 'Never have I ever had a near death experience',
 'Never have I ever flashed a bartender for a free drink',
@@ -9,6 +20,7 @@ var myQuestions = [
 'Never have I ever talked to myself out loud in public',
 'Never have I ever farted and blamed someone else',
 'Never have I ever lied about my "number" to avoid judgement',
+    //
 'Never have I ever given or received a lap dance',
 'Never have I ever slept with my best friend',
 'Never have I ever sent a dirty text to the wrong person',
@@ -174,15 +186,15 @@ var myQuestions = [
 'Never have I ever had paid for tinder',
 'Never have I ever been on a tinder date'
 
-];
+];*/
 
 function getmyQuestions(count){
-    var tmpArrayE = myQuestions.slice(myQuestions);
+    var tmpArrayE = allQuestions.slice(allQuestions);
     var goE = [];
 
-    if (myQuestions.length > 0) {
-    var optionsE = Math.floor(Math.random() * myQuestions.length);
-    var removedE = myQuestions.splice(optionsE,1);
+    if (allQuestions.length > 0) {
+    var optionsE = Math.floor(Math.random() * allQuestions.length);
+    var removedE = allQuestions.splice(optionsE,1);
 
 	document.getElementById("btnText").innerHTML = "Next";
     document.getElementById("Question1").innerHTML = removedE;
