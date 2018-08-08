@@ -4,6 +4,9 @@
     <description>
         Chug Challenge
     </description>
+    
+    <plugin name="cordova-plugin-firebase" spec="^1.0.0" />
+    
     <platform name="android">
         <!--<icon src="ldpi.png" platform="android" qualifier="ldpi" />
         <icon src="mdpi.png" platform="android" qualifier="mdpi" />
