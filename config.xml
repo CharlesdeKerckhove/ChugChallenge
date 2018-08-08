@@ -1,25 +1,21 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.chugchallenge" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>ChugChallenge</name>
-    <description>
-        Chug Challenge
-    </description>
-    
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.chugchallenge"
+    versionCode = "10"
+    version     = "1.0.1" >
+
+<!-- versionCode is optional and Android only -->
 <plugin name="cordova-plugin-firebase" spec="0.1.20" />
-    
-    
-    <platform name="android">
-        <!--<icon src="ldpi.png" platform="android" qualifier="ldpi" />
-        <icon src="mdpi.png" platform="android" qualifier="mdpi" />
-        <icon src="hdpi.png" platform="android" qualifier="hdpi" />
-        <icon src="xhdpi.png" platform="android" qualifier="xhdpi" />
-        <icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
-        <icon src="xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
-        <icon src="fr-xxhdpi.png" platform="android" qualifier="fr-xxhdpi" />-->
-    </platform>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
+ 
+  <name>Chug Challenge</name>
+
+  <description>
+      A drinking game
+  </description>
+
+  <author>
+      Charles de Kerckhove
+  </author>
+
 </widget>
