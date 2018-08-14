@@ -1,3 +1,11 @@
+// Initialize Firebase
+var config = {
+apiKey: "AIzaSyB5tgQuvhtVY-sJu5IW0kUnHZAEeYkzBE8",
+authDomain: "chug-challenges.firebaseapp.com",
+databaseURL: "https://chug-challenges.firebaseio.com",
+projectId: "chug-challenges"
+};
+firebase.initializeApp(config);
 var docRef = firebase.database();
 
 var NeverQuestionRef = docRef.ref("/Game Type/Never Have I Ever/Questions");
