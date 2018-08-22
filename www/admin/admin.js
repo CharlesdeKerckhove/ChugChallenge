@@ -95,3 +95,7 @@ uploadParanoiaQ.addEventListener("click", function() {
        window.location.href= 'admin.html';
     }, 2000);
 });
+var QuitBtn = document.getElementById("QuitBtn");
+QuitBtn.addEventListener('click', function(){
+                          window.location.href='../index.html'
+                          });

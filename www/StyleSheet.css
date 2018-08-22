@@ -35,6 +35,48 @@ h3{
     font-family: Arial, Comic-Sans, Times-New-Roman;
 }
 /*Consistent Items*/
+    /*Buttons*/
+.Button2{
+    text-align: center;
+    background-color: #459ee5;
+    height:auto;
+    width:100%;
+    color: #fff;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: none;
+   	text-decoration: none;
+}
+.Button3Left{
+    background-color: #0ac049;
+    height:auto;
+    width:40%;
+    display: inline-block;
+    margin-top: 5%;
+    margin-right: 5%;
+    color: #fff;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:4%;
+    border: none;
+   	text-decoration: none;
+}
+.Button3Right{
+    background-color: #0ac049;
+    height:auto;
+    width:40%;
+    display: inline-block;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 125%;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    padding:4%;
+   	border: none;
+   	text-decoration: none;
+}
     /*Never*/
 .BorderC{
     height:400px;
@@ -201,47 +243,7 @@ h3{
 	left: 50%;
 	transform:translateX(-50%);
 }
-.Button2{
-    text-align: center;
-    background-color: #459ee5;
-    height:auto;
-    width:100%;
-    color: #fff;
-    font-size: 125%;
-    font-family: Arial, Comic-Sans, Times-New-Roman;
-    padding:3%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    border: none;
-   	text-decoration: none;
-}
-.Button3Left{
-    background-color: #0ac049;
-    height:auto;
-    width:40%;
-    display: inline-block;
-    margin-top: 5%;
-    margin-right: 5%;
-    color: #fff;
-    font-size: 125%;
-    font-family: Arial, Comic-Sans, Times-New-Roman;
-    padding:4%;
-    border: none;
-   	text-decoration: none;
-}
-.Button3Right{
-    background-color: #0ac049;
-    height:auto;
-    width:40%;
-    display: inline-block;
-    margin-top: 5%;
-    color: #fff;
-    font-size: 125%;
-    font-family: Arial, Comic-Sans, Times-New-Roman;
-    padding:4%;
-   	border: none;
-   	text-decoration: none;
-}
+
 .Button4{
     background-color: #fff;
     height:auto;
@@ -301,49 +303,31 @@ a{
     color: #f785b6;
 }
 
-#heads{
-    width: 40%;
-    height: auto;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    visibility: hidden
-}
-#tails{
-    width: 40%;
-    height: auto;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    visibility: hidden
-}
+/*Admin*/
 .QuestionInputs{
     width: 80%;
     height: 1.3em;
     font-size: 1.3em;
     font-family: Arial, Comic-Sans, Times-New-Roman;
     float: left;
-    margin-left: 4%;
-    margin-top: 2%;
-    margin-bottom: 10%;
+    padding: 1%;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    border: 2px solid #459ee5;
 }
 .uploadQuestion{
     width: 10%;
     font-size: 125%;
     font-family: Arial, Comic-Sans, Times-New-Roman;
     float: left;
+    padding: 1%;
     margin-left: 2%;
     margin-top: 2%;
-    margin-bottom: 1%;
-    background-color: #fff;
-    color: #f785b6;
+    background-color: #459ee5;
+    color: #fff;
+    border: none;
 }
 #uploadStatus{
-    position: absolute;
-    bottom: 0%;
-    left: 45%;
-    transform: translateX(-45%);
-    width: 100%;
+    display: inline-block;
 }
