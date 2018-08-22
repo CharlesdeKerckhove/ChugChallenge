@@ -1,3 +1,11 @@
+// Initialize Firebase
+var config = {
+apiKey: "AIzaSyB5tgQuvhtVY-sJu5IW0kUnHZAEeYkzBE8",
+authDomain: "chug-challenges.firebaseapp.com",
+databaseURL: "https://chug-challenges.firebaseio.com",
+projectId: "chug-challenges"
+};
+firebase.initializeApp(config);
 var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitNeverBtn");
 QuitBtn.addEventListener('click', function(){
