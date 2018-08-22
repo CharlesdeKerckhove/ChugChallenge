@@ -1,3 +1,18 @@
+var docRef = firebase.database();
+var QuitBtn = document.getElementById("QuitEroticBtn");
+QuitBtn.addEventListener('click', function(){
+                          window.location.href='index.html'
+                          });
+var EroticQuestionRef = docRef.ref("/Game Type/Erotic End Game/Questions");
+var allQuestions = [];
+
+EroticQuestionRef.once('value', function(data){
+    data.forEach(function(item){
+        allQuestions.push(item.val());
+     });
+});
+
+/*
 var myQuestions = [
 'Everyone: Drink twice if you are on the pill?',
 'Girls: Drink twice if you wish your boobs were bigger?',
@@ -80,17 +95,18 @@ var myQuestions = [
 'Have you ever had sex with someone of the same sex?',
 'EMPTY'
 ];
+*/
 
 function getmyQuestions(count){
-    var tmpArrayE = myQuestions.slice(myQuestions);
+    var tmpArrayE = allQuestions.slice(allQuestions);
     var goE = [];
 
-    if (myQuestions.length > 0) {
-    var optionsE = Math.floor(Math.random() * myQuestions.length);
-    var removedE = myQuestions.splice(optionsE,1);
+    if (allQuestions.length > 0) {
+    var optionsE = Math.floor(Math.random() * allQuestions.length);
+    var removedE = allQuestions.splice(optionsE,1);
 
-	document.getElementById("btnText").innerHTML = "Next";
-    document.getElementById("Question1").innerHTML = removedE;
+	document.getElementById("NextEroticBtn").innerHTML = "Next";
+    document.getElementById("EroticQuestion").innerHTML = removedE;
     } else {
 window.location.href = "EndEnd.html"
     }

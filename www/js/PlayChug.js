@@ -1,3 +1,19 @@
+var docRef = firebase.database();
+var QuitBtn = document.getElementById("QuitChugBtn");
+QuitBtn.addEventListener('click', function(){
+                          window.location.href='index.html'
+                          });
+var ChugQuestionRef = docRef.ref("/Game Type/Chug Challenge/Questions");
+var allQuestions = [];
+
+ChugQuestionRef.once('value', function(data){
+    data.forEach(function(item){
+        allQuestions.push(item.val());
+     });
+});
+
+
+/*
 var myChallenges = [
 'Down your drink',
 'Down your drink',
@@ -77,12 +93,6 @@ var myChallenges = [
 'If you would have sex with the person to your right drink four times'
 ];
 
-function getMyChallenges(count){
-var random = myChallenges[Math.floor(Math.random()*myChallenges.length)];
-document.getElementById("btnText").innerHTML = "Next";
-document.getElementById("Challenge1").innerHTML = random;
-}
-
 var everyoneChallenges = [
 'EVERYONE: Fill cups, partner up and have a drink off - Loser takes a shot',
 'EVERYONE: What is your favourite sex position',
@@ -129,17 +139,18 @@ var everyoneChallenges = [
 'EVERYONE: If you have the letter J or H in your name take off an item of clothing',
 'EVERYONE: Anyone who has more than half their drink left take 15 sips'
 ];
+*/
 
-function getEveryoneChallenges(count){
-    var tmpArrayE = everyoneChallenges.slice(everyoneChallenges);
+function getmyQuestions(count){
+    var tmpArrayE = allQuestions.slice(allQuestions);
     var goE = [];
 
-    if (everyoneChallenges.length > 0) {
-    var optionsE = Math.floor(Math.random() * everyoneChallenges.length);
-    var removedE = everyoneChallenges.splice(optionsE,1);
+    if (allQuestions.length > 0) {
+    var optionsE = Math.floor(Math.random() * allQuestions.length);
+    var removedE = allQuestions.splice(optionsE,1);
 
-	document.getElementById("btnText").innerHTML = "Next";
-    document.getElementById("Challenge1").innerHTML = removedE;
+	document.getElementById("NextChugBtn").innerHTML = "Next";
+    document.getElementById("ChugQuestion").innerHTML = removedE;
     } else {
 window.location.href = "EndChug.html"
     }
@@ -147,10 +158,5 @@ window.location.href = "EndChug.html"
 
 
 function Select(){
-var questionTypes = [
-    getMyChallenges,
-	getEveryoneChallenges
-];
-var rand = questionTypes[Math.floor(Math.random()*questionTypes.length)];
-rand(1);
+getmyQuestions(1);
 }

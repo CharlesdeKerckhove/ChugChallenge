@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	max-height:100%;
+	max-width: 100%;
+    font-size: 1.2em;
+    font-family: Arial, Comic-Sans, Times-New-Roman;
+    background-color: #fff;
+	text-align: center;
+}
+/*fonts*/
 h1{
     float: center;
     text-align: center;
@@ -5,80 +18,173 @@ h1{
     font-size: 2em;
     font-family: Arial, Comic-Sans, Times-New-Roman;
     margin-top: 5%;
+    margin-bottom: 2%;
 }
 h2{
     float: center;
     text-align: center;
-    color: #f785b6;
-    font-size: 1.4em;
+    color: #000000;
+    font-size: 2.4em;
     font-family: Arial, Comic-Sans, Times-New-Roman;
+    margin-top: 5%;
 }
 h3{
     float: center;
     text-align: center;
-    color: #f785b6;
-    font-size: 1.6em;
+    font-size: 2.4em;
     font-family: Arial, Comic-Sans, Times-New-Roman;
 }
+/*Consistent Items*/
+    /*Never*/
+.BorderC{
+    height:400px;
+    width: 99%;
+    border: 2px solid transparent;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Question1{
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+    /*Chug*/
+.Border{
+    border: 2px solid transparent;
+    border-radius: 2%;
+	margin: auto;
+	width: 100%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+/*Index*/
 #SelectGame{
     float: center;
     text-align: center;
     color: #000000;
     font-size: 1.8em;
     margin: none;
+    margin-bottom: 2%;
     font-family: Arial, Comic-Sans, Times-New-Roman;
 }
-body{
-	max-height:100%;
-	max-width: 100%;
-    font-size: 1.1em;
-    font-family: Arial, Comic-Sans, Times-New-Roman;
-    background-color: #fff;
-	text-align: center;
-}
-.Border{
-    border: 2px solid transparent;
-    border-bottom-color: #f785b6;
-    border-radius: 2%;
-	margin: auto;
-	width: 100%;
-	padding-bottom: 1.5%;
-	padding-top: 1.5%;
-}
-.BorderC{
+#buttons{
     position: absolute;
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%, -45%);
-    height:250px;
-	max-height:100%;
-    width: 98%;
-    border: 2px solid transparent;
-    border-bottom-color: #f785b6;
-    border-top-color: #f785b6;
-    border-radius: 2%;
+    top: 55%;
+    left: 0%;
+    transform: translate(-0%, -50%);
+    width: 100%;
 }
-.BtnContainer{
-    text-align: center;
+#NeverBtn{
+    background-color: #0ac049;
 }
-.BtnHome{
-    display: inline;
-    text-align: left;
-    padding-right: 30px;
-    padding-left: 5px;
+#ChugBtn{
+    background-color: #459ee5;
 }
-.BtnRestart{
-    float: center;
-    text-align: center;
-    padding-right: 30px;
-    padding-left: 5px;
+#EroBtn{
+    background-color: #7f73ed;
 }
-.BtnNext{
-    display: inline;
-    text-align: left;
-    padding-left: 30px;
-    padding-right: 5px;
+#ParaBtn{
+    background-color: #ff3377;
+    margin-bottom: 20%;
 }
+#SuggestBtn{
+    background-color: #ff4444;
+}
+#AdminBtn{
+    background-color: #daa520;
+}
+
+/*Never*/
+#NeverQuestion{
+    color: #0ac049;
+}
+#NeverBorder{
+    border-bottom-color: #0ac049;
+    border-top-color: #0ac049;
+}
+#QuitNeverBtn{
+    background-color: #0ac049;
+}
+#NextNeverBtn{
+    background-color: #0ac049;
+}
+#ReplayNever{
+    background-color: #0ac049;
+}
+#QuitNever{
+    background-color: #0ac049;
+}
+
+/*Chug*/
+#ChugQuestion{
+    color: #459ee5;
+}
+#ChugBorder{
+    border-top-color: #459ee5;
+    border-bottom-color: #459ee5;
+}
+#QuitChugBtn{
+    background-color: #459ee5;
+}
+#NextChugBtn{
+    background-color: #459ee5;
+}
+#ReplayChug{
+    background-color: #459ee5;
+}
+#QuitChug{
+    background-color: #459ee5;
+}
+
+/*Erotic*/
+#EroticQuestion{
+    color: #7f73ed;
+}
+#EroticBorder{
+    border-top-color: #7f73ed;
+    border-bottom-color: #7f73ed;
+}
+#QuitEroticBtn{
+    background-color: #7f73ed;
+}
+#NextEroticBtn{
+    background-color: #7f73ed;
+}
+#ReplayErotic{
+    background-color: #7f73ed;
+}
+#QuitErotic{
+    background-color: #7f73ed;
+}
+
+/*Paranoia*/
+#ParanoiaQuestion{
+    color: #ff3377;
+}
+#ParanoiaBorder{
+    border-top-color: #ff3377;
+    border-bottom-color: #ff3377;
+}
+#StartParanoiaBtn{
+    background-color: #ff3377;
+}
+#QuitParanoiaBtn{
+    background-color: #ff3377;
+}
+#NextParanoiaBtn{
+    background-color: #ff3377;
+}
+#ReplayParanoia{
+    background-color: #ff3377;
+}
+#QuitParanoia{
+    background-color: #ff3377;
+}
+
+
 .Button1{
     background-color: #fef3f8;
     height:auto;
@@ -96,47 +202,44 @@ body{
 	transform:translateX(-50%);
 }
 .Button2{
-    background-color: #fff;
+    text-align: center;
+    background-color: #459ee5;
     height:auto;
     width:100%;
-    color: #f785b6;
+    color: #fff;
     font-size: 125%;
     font-family: Arial, Comic-Sans, Times-New-Roman;
-    padding:2%;
-   	border-color: #f785b6;
-   	border-radius: 2%;
+    padding:3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: none;
    	text-decoration: none;
 }
 .Button3Left{
-    background-color: #fff;
+    background-color: #0ac049;
     height:auto;
     width:40%;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    margin: 5%;
-    color: #f785b6;
+    display: inline-block;
+    margin-top: 5%;
+    margin-right: 5%;
+    color: #fff;
     font-size: 125%;
     font-family: Arial, Comic-Sans, Times-New-Roman;
-    padding:2%;
-   	border-color: #f785b6;
-   	border-radius: 2%;
+    padding:4%;
+    border: none;
    	text-decoration: none;
 }
 .Button3Right{
-    background-color: #fff;
+    background-color: #0ac049;
     height:auto;
     width:40%;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    margin: 5%;
-    color: #f785b6;
+    display: inline-block;
+    margin-top: 5%;
+    color: #fff;
     font-size: 125%;
     font-family: Arial, Comic-Sans, Times-New-Roman;
-    padding:2%;
-   	border-color: #f785b6;
-   	border-radius: 2%;
+    padding:4%;
+   	border: none;
    	text-decoration: none;
 }
 .Button4{

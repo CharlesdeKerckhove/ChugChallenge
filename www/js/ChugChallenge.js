@@ -1,4 +1,25 @@
-var myArray = [
+var docRef = firebase.database();
+var QuitBtn = document.getElementById("QuitBtn");
+QuitBtn.addEventListener('click', function(){
+                          window.location.href='index.html'
+                          });
+var StartBtn = document.getElementById("StartBtn");
+StartBtn.addEventListener('click', function(){
+                          window.location.href='PlayChug.html'
+                          });
+var ChugRulesRef = docRef.ref("/Game Type/Chug Challenge/Rules");
+var allRules = [];
+
+ChugRulesRef.once('value', function(data){
+    data.forEach(function(item){
+        allRules.push(item.val());
+        getRules(2);
+     });
+});
+
+
+
+/*var myArray = [
 'Left hand drinking',
 'No names',
 'No pointing',
@@ -16,24 +37,11 @@ var myArray = [
 'Empty glasses - Once a drink has been finished tap the glass on your shoulder',
 'No phones',
 'Say I love you after every sentence'
-]; 
-
-var intro = "Complete the challenge or take a shot."
-
-function getIntro(){
-	y = intro;
-	document.getElementById("Intro1").innerHTML = y;
-}
-var intro2 = "When complete, pass the phone to the next challenger."
-
-function getIntro2(){
-	y = intro2;
-	document.getElementById("Intro2").innerHTML = y;
-}
+]; */
 
 function getRules(count){
 
-    var tmpArray = myArray.slice(myArray);
+    var tmpArray = allRules.slice(allRules);
     var go = [];
 
     for (var i = 0; i < count; i++) {
@@ -46,7 +54,3 @@ document.getElementById("Rule1").innerHTML = "1) " + " " + go[0];
 document.getElementById("Rule2").innerHTML = "2) " + " " + go[1];
 }
 
-
-getIntro();
-getIntro2();
-getRules(2);

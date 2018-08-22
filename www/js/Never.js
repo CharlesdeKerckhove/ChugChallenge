@@ -1,5 +1,8 @@
 var docRef = firebase.database();
-
+var QuitBtn = document.getElementById("QuitNeverBtn");
+QuitBtn.addEventListener('click', function(){
+                          window.location.href='index.html'
+                          });
 var NeverQuestionRef = docRef.ref("/Game Type/Never Have I Ever/Questions");
 var allQuestions = [];
 
@@ -196,8 +199,8 @@ function getmyQuestions(count){
     var optionsE = Math.floor(Math.random() * allQuestions.length);
     var removedE = allQuestions.splice(optionsE,1);
 
-	document.getElementById("btnText").innerHTML = "Next";
-    document.getElementById("Question1").innerHTML = removedE;
+	document.getElementById("NextNeverBtn").innerHTML = "Next";
+    document.getElementById("NeverQuestion").innerHTML = removedE;
     } else {
 window.location.href = "EndNever.html"
     }

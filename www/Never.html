@@ -6,28 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h1>
-Chug Challenges
-</h1>
-    <h2>Never Have I Ever ... </h2>
 
-<div class = "BorderC">
-    <h3 id = "Question1">Please Drink Responsibly!</h3>
-</div>
+<h2>Never Have I Ever</h2>
 
-<div class = "BtnHome">
-    <button class = "Button3Left">
-        <a href = "index.html">
-            Quit
-        </a>
-    </button>
+<div class = "BorderC" id = "NeverBorder">
+    <h3 id = "NeverQuestion" class = "Question1">Please Drink Responsibly!</h3>
 </div>
+    
+<button class = "Button3Left" id = "QuitNeverBtn">
+        Quit
+</button>
 
-<div class = "BtnNext">
-    <button class = "Button3Right" onclick="Play()">
-      <div id = "btnText"> Start </div>
-    </button>
-</div>
+<button class = "Button3Right" id = "NextNeverBtn" onclick="Play()">
+        Start
+</button>
     
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
