@@ -113,10 +113,7 @@ h3{
     font-family: Arial, Comic-Sans, Times-New-Roman;
 }
 #buttons{
-    position: absolute;
-    top: 55%;
-    left: 0%;
-    transform: translate(-0%, -50%);
+    display: inline-block;
     width: 100%;
 }
 #NeverBtn{
@@ -130,7 +127,7 @@ h3{
 }
 #ParaBtn{
     background-color: #ff3377;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 #SuggestBtn{
     background-color: #ff4444;
