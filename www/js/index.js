@@ -6,20 +6,20 @@ var SuggestBtn = document.getElementById("SuggestBtn");
 var AdminBtn = document.getElementById("AdminBtn");
 
 NeverBtn.addEventListener('click', function(){
-                          window.location.href='Never.html'
+                          window.location.href='www/Never.html'
                           });
 ChugBtn.addEventListener('click', function(){
-                          window.location.href='ChugChallenge.html'
+                          window.location.href='www/ChugChallenge.html'
                           });
 EroBtn.addEventListener('click', function(){
-                          window.location.href='EndGame.html'
+                          window.location.href='www/EndGame.html'
                           });
 ParaBtn.addEventListener('click', function(){
-                          window.location.href='Paranoia.html'
+                          window.location.href='www/Paranoia.html'
                           });
 SuggestBtn.addEventListener('click', function(){
-                          window.location.href='Suggestions.html'
+                          window.location.href='www/Suggestions.html'
                           });
 AdminBtn.addEventListener('click', function(){
-                          window.location.href='admin/admin.html'
+                          window.location.href='www/admin/admin.html'
                           });

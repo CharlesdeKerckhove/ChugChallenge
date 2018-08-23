@@ -104,7 +104,6 @@ h3{
 }
 /*Index*/
 #SelectGame{
-    float: center;
     text-align: center;
     color: #000000;
     font-size: 1.8em;
@@ -113,10 +112,7 @@ h3{
     font-family: Arial, Comic-Sans, Times-New-Roman;
 }
 #buttons{
-    position: absolute;
-    top: 55%;
-    left: 0%;
-    transform: translate(-0%, -50%);
+    margin-top: 5%;
     width: 100%;
 }
 #NeverBtn{

@@ -1,7 +1,7 @@
 var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitParanoiaBtn");
 QuitBtn.addEventListener('click', function(){
-                          window.location.href='index.html'
+                          window.location.href='../index.html'
                           });
 var ParanoiaQuestionRef = docRef.ref("/Game Type/Paranoia/Questions");
 var allQuestions = [];
