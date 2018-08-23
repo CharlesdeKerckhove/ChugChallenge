@@ -1,4 +1,3 @@
-var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitNeverBtn");
 QuitBtn.addEventListener('click', function(){
                           window.location.href='index.html'
