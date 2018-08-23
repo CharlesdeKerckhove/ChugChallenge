@@ -1,7 +1,7 @@
 var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitChugBtn");
 QuitBtn.addEventListener('click', function(){
-                          window.location.href='../index.html'
+                          window.location.href='index.html'
                           });
 var ChugQuestionRef = docRef.ref("/Game Type/Chug Challenge/Questions");
 var allQuestions = [];

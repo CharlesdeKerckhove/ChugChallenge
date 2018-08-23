@@ -1,7 +1,7 @@
 var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitNeverBtn");
 QuitBtn.addEventListener('click', function(){
-                          window.location.href='../index.html'
+                          window.location.href='index.html'
                           });
 var NeverQuestionRef = docRef.ref("/Game Type/Never Have I Ever/Questions");
 var allQuestions = [];

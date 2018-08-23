@@ -1,7 +1,7 @@
 var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitBtn");
 QuitBtn.addEventListener('click', function(){
-                          window.location.href='../index.html'
+                          window.location.href='index.html'
                           });
 var StartBtn = document.getElementById("StartBtn");
 StartBtn.addEventListener('click', function(){
