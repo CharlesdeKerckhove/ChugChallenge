@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.chugchallenge" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.chugchallenge" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ChugChallenge</name>
     <description>
-        A blank PhoneGap app.
+        A drinking application.
     </description>
     <platform name="android">
         <icon src="ldpi.png" platform="android" qualifier="ldpi" />
@@ -14,7 +14,7 @@
         <icon src="fr-xxhdpi.png" platform="android" qualifier="fr-xxhdpi" />
     </platform>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+        Charles de Kerckhove
     </author>
     <content src="index.html" />
     <access origin="*" />
