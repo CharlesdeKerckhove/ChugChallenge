@@ -1,18 +1,17 @@
-var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitNeverBtn");
 QuitBtn.addEventListener('click', function(){
                           window.location.href='index.html'
                           });
-var NeverQuestionRef = docRef.ref("/Game Type/Never Have I Ever/Questions");
+/*var NeverQuestionRef = docRef.ref("/Game Type/Never Have I Ever/Questions");
 var allQuestions = [];
 
 NeverQuestionRef.once('value', function(data){
     data.forEach(function(item){
         allQuestions.push(item.val());
      });
-});
+});*/
 
-/*var myQuestions = [
+var allQuestions = [
 'Never have I ever called in sick to work because I was hungover',
 'Never have I ever had a near death experience',
 'Never have I ever flashed a bartender for a free drink',
@@ -189,7 +188,7 @@ NeverQuestionRef.once('value', function(data){
 'Never have I ever had paid for tinder',
 'Never have I ever been on a tinder date'
 
-];*/
+];
 
 function getmyQuestions(count){
     var tmpArrayE = allQuestions.slice(allQuestions);

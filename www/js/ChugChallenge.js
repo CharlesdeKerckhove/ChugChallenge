@@ -1,4 +1,3 @@
-var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitBtn");
 QuitBtn.addEventListener('click', function(){
                           window.location.href='index.html'
@@ -7,7 +6,7 @@ var StartBtn = document.getElementById("StartBtn");
 StartBtn.addEventListener('click', function(){
                           window.location.href='PlayChug.html'
                           });
-var ChugRulesRef = docRef.ref("/Game Type/Chug Challenge/Rules");
+/*var ChugRulesRef = docRef.ref("/Game Type/Chug Challenge/Rules");
 var allRules = [];
 
 ChugRulesRef.once('value', function(data){
@@ -15,11 +14,11 @@ ChugRulesRef.once('value', function(data){
         allRules.push(item.val());
         getRules(2);
      });
-});
+});*/
 
 
 
-/*var myArray = [
+var allRules = [
 'Left hand drinking',
 'No names',
 'No pointing',
@@ -37,7 +36,7 @@ ChugRulesRef.once('value', function(data){
 'Empty glasses - Once a drink has been finished tap the glass on your shoulder',
 'No phones',
 'Say I love you after every sentence'
-]; */
+]; 
 
 function getRules(count){
 
@@ -54,3 +53,4 @@ document.getElementById("Rule1").innerHTML = "1) " + " " + go[0];
 document.getElementById("Rule2").innerHTML = "2) " + " " + go[1];
 }
 
+getRules(2);

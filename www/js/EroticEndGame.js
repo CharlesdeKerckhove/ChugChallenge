@@ -1,19 +1,9 @@
-var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitEroticBtn");
 QuitBtn.addEventListener('click', function(){
                           window.location.href='index.html'
                           });
-var EroticQuestionRef = docRef.ref("/Game Type/Erotic End Game/Questions");
-var allQuestions = [];
 
-EroticQuestionRef.once('value', function(data){
-    data.forEach(function(item){
-        allQuestions.push(item.val());
-     });
-});
-
-/*
-var myQuestions = [
+var allQuestions= [
 'Everyone: Drink twice if you are on the pill?',
 'Girls: Drink twice if you wish your boobs were bigger?',
 'Boys: Drink twice if you wish your penis was bigger?',
@@ -92,10 +82,9 @@ var myQuestions = [
 'Who is the best looking person (of the opposite gender) playing this game?',
 'Who is the best looking person (of the same gender) playing this game?',
 'What was the best sex position you have ever tried?',
-'Have you ever had sex with someone of the same sex?',
-'EMPTY'
+'Have you ever had sex with someone of the same sex?'
 ];
-*/
+
 
 function getmyQuestions(count){
     var tmpArrayE = allQuestions.slice(allQuestions);

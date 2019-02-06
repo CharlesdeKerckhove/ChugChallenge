@@ -1,20 +1,10 @@
-var docRef = firebase.database();
 var QuitBtn = document.getElementById("QuitChugBtn");
 QuitBtn.addEventListener('click', function(){
                           window.location.href='index.html'
                           });
-var ChugQuestionRef = docRef.ref("/Game Type/Chug Challenge/Questions");
-var allQuestions = [];
-
-ChugQuestionRef.once('value', function(data){
-    data.forEach(function(item){
-        allQuestions.push(item.val());
-     });
-});
 
 
-/*
-var myChallenges = [
+var allQuestions = [
 'Down your drink',
 'Down your drink',
 'Down your drink',
@@ -90,10 +80,8 @@ var myChallenges = [
 'Drink if you have slept with someone playing this game',
 'Drink if you have kissed someone playing this game',
 'Drink if you have fantasised about someone playing this game',
-'If you would have sex with the person to your right drink four times'
-];
+'If you would have sex with the person to your right drink four times',
 
-var everyoneChallenges = [
 'EVERYONE: Fill cups, partner up and have a drink off - Loser takes a shot',
 'EVERYONE: What is your favourite sex position',
 'EVERYONE: Take one sip for each person you have slept with',
@@ -139,9 +127,10 @@ var everyoneChallenges = [
 'EVERYONE: If you have the letter J or H in your name take off an item of clothing',
 'EVERYONE: Anyone who has more than half their drink left take 15 sips'
 ];
-*/
+
 
 function getmyQuestions(count){
+    
     var tmpArrayE = allQuestions.slice(allQuestions);
     var goE = [];
 
